@@ -12,7 +12,7 @@ This covers the build and package of the following:
 
 ## JxCore - Desktop build
 
-* create some base path
+* Create some base path
 
 ```
 cd ~/tmp
@@ -307,4 +307,45 @@ drwxr-xr-x 4 501 20 136B Mar 15 18:47 src/
 drwxr-xr-x 7 501 20 238B Mar 15 18:47 test/
 drwxr-xr-x 3 501 20 102B Mar 15 18:47 www/
 ```
+
+# Creating Distribution Files.
+
+Once we're done, we need to create a `dist` directory that will hold the packages we just created.
+
+Note that the directory structure is below and also shown in [distribute.md](./distribute.md)
+
+#### Directory structure
+Within the path the folder structure is:
+
+```
+--- jxcore
+   \____ 0312/release
+    ---- 0312/debug
+--- jxcore-cordova
+   \____ 0.1.2/release
+    ---- 0.1.2/debug
+```
+
+The following is for handling a Release build.
+
+**NOTE:** the `9999` or `9.9.9` value is replaced with the version of the particular package.
+
+Currently JxCore and jxcore-cordova use different schemes / formats in the folder structure, and the current versions are:
+
+* JxCore:  0.3.12  - **Folder will use `0312`**
+* jxcore-cordova:  0.1.2  - **Folder will use `0.1.2`**
+
+From the root of the Build directory `./builds` - if that's where you started at the beginning.
+```
+mkdir -p dist/jxcore/0312/release
+mkdir -p dist/jxcore-cordova/0.1.2/release
+
+mv ./release/jx_iosFATsm.zip dist/jxcore/0312/release
+mv ./release/jx_androidFATsm.zip dist/jxcore/0312/release
+mv ./release/io.jxcore.node.jx dist/jxcore-cordova/0.1.2/release
+```
+
+#### Pushing to Storage / CDN.
+
+See the [distribute.md](./distribute.md) document for information on distribution.
 
