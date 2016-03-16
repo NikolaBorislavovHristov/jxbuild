@@ -41,6 +41,7 @@ Whithin each of the following paths current there is:
 ##### Release
 - [ ] IOS [https://jxcore.azureedge.net/jxcore/0312/release/jx_iosFATsm.zip](https://jxcore.azureedge.net/jxcore/0312/release/jx_iosFATsm.zip)
 - [ ] Android [https://jxcore.azureedge.net/jxcore/0312/release/jx_androidFATsm.zip](https://jxcore.azureedge.net/jxcore/0312/release/)
+
 ##### Debug
 - [ ] IOS [https://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip](https://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip)
 - [ ] Android [https://jxcore.azureedge.net/jxcore/0312/debug/jx_androidFATsm.zip](https://jxcore.azureedge.net/jxcore/0312/debug/jx_androidFATsm.zip)
@@ -49,6 +50,7 @@ Whithin each of the following paths current there is:
 #### jxcore-cordova
 ##### Release
 - [ ] [https://jxcore.azureedge.net/jxcore-cordova/0.1.2/release/io.jxcore.node.jx](https://jxcore.azureedge.net/jxcore-cordova/0.1.2/release/io.jxcore.node.jx)
+
 ##### Debug
 - [ ] [https://jxcore.azureedge.net/jxcore-cordova/0.1.2/debug/io.jxcore.node.jx](https://jxcore.azureedge.net/jxcore-cordova/0.1.2/debug/io.jxcore.node.jx)
 
