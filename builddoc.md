@@ -1,6 +1,6 @@
 # JxCore Build
 
-This covers the build of the following:
+This covers the build and package of the following:
 
 * JxCore - desktop
 * JxCore - iOS
@@ -23,7 +23,7 @@ cd builds
 * Clone https://github.com/thaliproject/jxcore
 
 ```
-git clone —depth=50 https://github.com/ThaliProject/jxcore
+git clone —depth=10 https://github.com/ThaliProject/jxcore
 ```
 * Now make simple copies for other platforms after deleting the .git folder
 
@@ -35,11 +35,10 @@ git submodule init && git submodule update
 * This should give you feedback as follows:
 
 ```
-cicoriasmbp13@Shawns-MBP:$ git submodule init && git submodule update
 Submodule path 'deps/leveldown-mobile': checked out 'd22099865674a7821ee6417213418581d969b7a2'
 ```
 
-* We’ll remote the .git repository as we don’t need it anymore and it’s large; this makes our copies faster.
+* We’ll remove the .git repository as we don’t need it anymore and it’s large; this makes our copies faster.
 
 ```
 rm -rf .git
@@ -99,7 +98,7 @@ cd ios
 
 ```
 JXcore iOS binaries are ready under out_ios/ios 
-cicoriasmbp13@Shawns-MBP:~/tmp/jxcore/builds/debug/ios$ 
+
 ```
 
 * check to see that all libraries and headers are present
@@ -198,13 +197,19 @@ JXcore Android binaries are ready under out_android/android
 * Create the FAT zip
 
 ```
-zip ../../../../jx_androidFATsm *
-cd ../../../../
+cd out_android/android/bin
+#the following will show the path - remember this..
+pwd                                 (this could be a var - recall this)
+zip ../../../../jx_androidFATsm *   (that's 4 ..)
+cd ../../../../                     (that's 4 ..)
 ```
 
-
-
 * Make a note of the output path above - that path with a /bin added to the end will be used during the Cordova Build
+
+#### Path used in Cordova Build
+```
+./android/out_android/android/bin
+```
 
 # Cordova Build
 
@@ -302,3 +307,4 @@ drwxr-xr-x 4 501 20 136B Mar 15 18:47 src/
 drwxr-xr-x 7 501 20 238B Mar 15 18:47 test/
 drwxr-xr-x 3 501 20 102B Mar 15 18:47 www/
 ```
+
