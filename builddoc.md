@@ -25,7 +25,8 @@ cd builds
 ```
 git clone —depth=10 https://github.com/ThaliProject/jxcore
 ```
-* Now make simple copies for other platforms after deleting the .git folder
+
+* Ensure the leveldown git submodule is present.
 
 ```
 cd jxcore
@@ -38,6 +39,7 @@ git submodule init && git submodule update
 Submodule path 'deps/leveldown-mobile': checked out 'd22099865674a7821ee6417213418581d969b7a2'
 ```
 
+* Now make simple copies for other platforms after deleting the .git folder
 * We’ll remove the .git repository as we don’t need it anymore and it’s large; this makes our copies faster.
 
 ```
@@ -47,7 +49,7 @@ cp -R jxcore/ ios/
 cp -R jxcore/ android/
 ```
 
-* You should have something like:
+* You should have something like the following:
 
 ```
 drwxr-xr-x 27 501 20 918B Mar 15 14:38 android/
@@ -56,12 +58,15 @@ drwxr-xr-x 27 501 20 918B Mar 15 14:35 jxcore/
 ```
 
 * Build the Desktop version of JxCore - as you’re going to need the ./jx binary in the path for later builds.
-* We don’t need SpiderMonkey now - but if you want it you add the —engine-mozilla switch
+* We don’t need SpiderMonkey for Desktop (as of now) - but if you want it you add the —engine-mozilla switch
 
 ```
 cd jxcore
 ./configure --embed-leveldown && make  
-OR 
+```
+* The following is IF you need SpiderMonkey support. The builds below don't require the version of Jx that is used as part of the build..
+
+```
 ./configure --engine-mozilla --embed-leveldown && make
 ```
 
@@ -74,7 +79,7 @@ gyp: //jxcore/deps/leveldown-mobile/leveldown_embedded.gyp not found (cwd: //jxc
 **Error running GYP**
 ```
 
-* from the `./jxcore directory`:  (note the symbolic link ./jx → out/Release
+* From the `./jxcore directory`:  (note the symbolic link ./jx → out/Release
 
 ```
 export PATH=$PATH:$(pwd)
@@ -82,7 +87,7 @@ cd ../
 jx -jxv
 ```
 
-* this should output the version of JxCore - current this is 0.3.1.2
+* This should output to the console the version of JxCore - currently this is 0.3.1.2
 
 ## IOS Build
 
@@ -101,7 +106,7 @@ JXcore iOS binaries are ready under out_ios/ios
 
 ```
 
-* check to see that all libraries and headers are present
+* Check to see that all libraries and headers are present
 
 ```
 ls -lt out_ios/ios/bin
@@ -120,7 +125,7 @@ ls -lt out_ios/ios/bin
 -rw-r--r-- 1 cicoriasmbp13 staff 986968 Mar 14 15:29 **libcares.a**
 ```
 
-* At this point, we need to ZIP the ios libraries.
+* At this point, we need to ZIP the ios libraries; we make 2 zips, here I just zip twice.
 
 ```
 cd ./ios/out_ios/ios/bin
@@ -149,7 +154,7 @@ cd ../../../../                (that’s 4 ..)
 # Android Build
 
 * Ensure you download the NDK from: http://developer.android.com/ndk/downloads/index.html
-* On  OS X the direct link is here
+* For OS X the direct link is here
     * http://dl.google.com/android/repository/android-ndk-r11-darwin-x86_64.zip
 
 * Change to the directory root where you doing builds.
@@ -164,9 +169,9 @@ unzip ndk
 
 ```
 drwxr-xr-x 31 501 20 1.0K Mar 15 15:51 android/
-drwxr-xr-x 11 501 20 374B Mar 3 17:16 android-ndk-r11/
+drwxr-xr-x 11 501 20 374B Mar 3  17:16 android-ndk-r11/
 drwxr-xr-x 37 501 20 1.2K Mar 15 17:15 ios/
--rw-r--r-- 1 501 20 68M Mar 15 17:19 ios.zip
+-rw-r--r-- 1  501 20 68M  Mar 15 17:19 ios.zip
 drwxr-xr-x 31 501 20 1.0K Mar 15 15:42 jxcore/
 ```
 
@@ -187,6 +192,7 @@ build_scripts/android_compile.sh ../android-ndk-r11/ --embed-leveldown
 
 * This compilation also take quite some time.  grab another drink...
 
+### When Android Compilation is Done
 * When done you should see the following message..
 
 ```
@@ -213,7 +219,7 @@ cd ../../../../                     (that's 4 ..)
 
 # Cordova Build
 
-Go back to the root path of where your build are and Clone the repository:
+* Go back to the root path of where your build are and Clone the repository:
 
 ```
 cd ./builds 
@@ -240,7 +246,7 @@ cd src/android
 ./build_leveldown.sh ../../../android/out_android/android/bin/
 ```
 
-* You should see the following - **you can ignore the failed ‘cp’ commands as they are not being used**.
+* You should see the following - **you can ignore the failed ‘cp’ commands as they are not being used here**. They are present for anyone that wished to refresh the plugin within an existing JxCore/Cordova project. Those `./platforms/..` directories are part of the Cordova project structure.
 
 ```
 [armeabi] Compile++ thumb: jxcore <= JniHelper.cpp
@@ -278,8 +284,8 @@ mv io.jxcore.node.jx ../
 
 ### Extraction Test
 
-* move back to the root path of your build location.
-* in that directory, you should see the io.jxcore.node.jx file.
+* Move back to the root path of your build location.
+* In that directory, you should see the io.jxcore.node.jx file.
 * Run the following to sample an extract
 
 ```
@@ -292,9 +298,9 @@ jx io.jxcore.node.jx EXTRACT
 Total 96
 -rw-r--r-- 1 501 20 1.1K Mar 15 18:47 Changelog.md
 -rw-r--r-- 1 501 20 3.1K Mar 15 18:47 LICENSE
--rw-r--r-- 1 501 20 10K Mar 15 18:47 README.md
+-rw-r--r-- 1 501 20  10K Mar 15 18:47 README.md
 drwxr-xr-x 4 501 20 136B Mar 15 18:47 app/
-drwxr-xr-x 16 501 20 544B Mar 15 18:47 bin/
+drwxr-xr-x16 501 20 544B Mar 15 18:47 bin/
 -rw-r--r-- 1 501 20 1.0K Mar 15 18:47 index.js
 -rw-r--r-- 1 501 20 1.8K Mar 15 18:47 install_and_run.bat
 -rw-r--r-- 1 501 20 1.5K Mar 15 18:47 install_and_run.md
