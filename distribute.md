@@ -31,6 +31,9 @@ Within the path the folder structure is:
 --- jxcore-cordova
    \____ 0.1.2/release
     ---- 0.1.2/debug
+--- npmjx
+   \____ npmjx312.tar.gz
+    ---- npmjx312.jx
 ```
 
 ### JxCore Release

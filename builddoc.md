@@ -64,11 +64,34 @@ drwxr-xr-x 27 501 20 918B Mar 15 14:35 jxcore/
 cd jxcore
 ./configure --embed-leveldown && make  
 ```
+
+#### Desktop with V8 - jx_osx64v8.zip
+Create the ZIP package for this as follows:
+
+```
+mkdir -p ../dist/jx_osx64v8
+cp out/Release/jx ../dist/jx_osx64v8
+cd ../dist
+zip jx_osx64v8 jx_osx64v8/jx
+```
+
+
 * The following is IF you need SpiderMonkey support. The builds below don't require the version of Jx that is used as part of the build..
 
 ```
 ./configure --engine-mozilla --embed-leveldown && make
 ```
+
+#### Desktop with SpiderMonkey - jx_osx64sm.zip
+Create the ZIP package for this as follows:
+
+```
+mkdir -p ../dist/jx_osx64sm
+cp out/Release/jx ../dist/jx_osx64sm
+cd ../dist
+zip jx_osx64sm jx_osx64sm/jx
+```
+
 
 * Compilation takes some time
 * Once the desktop version is built, we need to add it to the PATH
@@ -314,6 +337,20 @@ drwxr-xr-x 7 501 20 238B Mar 15 18:47 test/
 drwxr-xr-x 3 501 20 102B Mar 15 18:47 www/
 ```
 
+
+# Creating the JxCore NPM parts...
+
+Go back to the desktop build directory, or any of the builds, and execute the following.
+
+```
+cd tools/npmjx/
+jx compile npmjx.jxp 
+mkdir -p ../../../dist/npmjx
+mv npmjxv312.jx ../../../dist/npmjx/
+```
+
+
+
 # Creating Distribution Files.
 
 Once we're done, we need to create a `dist` directory that will hold the packages we just created.
@@ -330,6 +367,9 @@ Within the path the folder structure is:
 --- jxcore-cordova
    \____ 0.1.2/release
     ---- 0.1.2/debug
+--- npmjx
+   \____ npmjx312.tar.gz
+    ---- npmjx312.jx
 ```
 
 The following is for handling a Release build.
@@ -346,10 +386,25 @@ From the root of the Build directory `./builds` - if that's where you started at
 mkdir -p dist/jxcore/0312/release
 mkdir -p dist/jxcore-cordova/0.1.2/release
 
+
 mv ./release/jx_iosFATsm.zip dist/jxcore/0312/release
 mv ./release/jx_androidFATsm.zip dist/jxcore/0312/release
 mv ./release/io.jxcore.node.jx dist/jxcore-cordova/0.1.2/release
 ```
+
+#### Creating the NPM tar.gz for JxCore
+NPM is a private version kept in `~/.jx` for the user. To create it, we download the NPM package, expand it, rename the `package` directory, then tar.gz it again.
+
+```
+cd ./builds/dist/npmjx     # this should be already there from steps above..
+
+curl https://registry.npmjs.org/npm/-/npm-3.3.12.tgz -o npm.tgz
+tar -xvf npm.tgz
+mv package/ npm/
+tar -zcvf npmjx312.tar.gz npm
+rm npm.tgz npm/
+```
+
 
 #### Pushing to Storage / CDN.
 
