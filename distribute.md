@@ -7,6 +7,10 @@
 
 # High Level Information
 
+## Disclaimer
+
+To make our own lives easier we are using publicly available distribution points for our builds. We are o.k. with others make very light use of these endpoints but please understand that nothing we are releasing is supported in any possible way. We have literally no resources (seriously, none) to handle any issues or problems. So if for some reason you want to play with these builds feel free but understand that it is 100% unsupported and that we can and will remove the builds, change them, fold, spindle or mutilate them at will. You have been warned.
+
 ## Azure Storage locations
 The distribution Storage location is available via CDN as well.
 
