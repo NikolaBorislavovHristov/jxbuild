@@ -44,10 +44,11 @@ Within the path the folder structure is:
 
 ### JxCore Release (v3.1.4)
 Whithin each of the following paths current there is:
-- [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_iosFATsm.zip)  (iOS)
-- [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_androidFATsm.zip) (Android)
-- [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64v8.zip) (macOS X desktop)
-- [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_win64v8.zip) (Windows desktop)
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
+- [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_androidFATsm.zip) (Android SpiderMonkey)
+- [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
+- [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64v8.zip) (macOS X desktop V8)
+- [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_win64v8.zip) (Windows desktop V8)
 
 ##### Debug (still v3.1.2, v3.1.4 debug hasn't been released yet) 
 - [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip) (iOS)
