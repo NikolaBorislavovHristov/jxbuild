@@ -2,6 +2,8 @@
 
 * JxCore - iOS
 * JxCore - Android
+* JxCore - macOS (desktop)
+* jxCore - Windows (desktop)
 * jxcore-cordova plugin
     * this ingests the iOS & Android builds from above...
 
@@ -30,32 +32,32 @@ Within the path the folder structure is:
 
 ```
 --- jxcore
-   \____ 0312/release
-    ---- 0312/debug
+   \____ 0314/release
+    ---- 0314/debug
 --- jxcore-cordova
-   \____ 0.1.2/release
-    ---- 0.1.2/debug
+   \____ 0.1.4/release
+    ---- 0.1.4/debug
 --- npmjx
-   \____ npmjx312.tar.gz
-    ---- npmjx312.jx
+   \____ npmjx314.tar.gz
+    ---- npmjx314.jx
 ```
 
-### JxCore Release
+### JxCore Release (v3.1.4)
 Whithin each of the following paths current there is:
-- [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/release/jx_iosFATsm.zip)  (iOS)
-- [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/release/jx_androidFATsm.zip) (android)
-- [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0312/release/jx_osx64v8.zip) (OS X / Desktop)
-- [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0312/release/jx_win64v8.zip) (Windows / Desktop)
+- [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_iosFATsm.zip)  (iOS)
+- [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_androidFATsm.zip) (Android)
+- [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64v8.zip) (macOS X desktop)
+- [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_win64v8.zip) (Windows desktop)
 
-##### Debug
-- [ ] IOS [https://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip)
-- [ ] Android [https://jxcore.azureedge.net/jxcore/0312/debug/jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_androidFATsm.zip)
+##### Debug (still v3.1.2, v3.1.4 debug hasn't been released yet) 
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip) (iOS)
+- [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_androidFATsm.zip) (Android)
 
 
 #### jxcore-cordova
-##### Release
-- [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.2/release/io.jxcore.node.jx)
+##### Release (v0.1.4)
+- [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.4/release/io.jxcore.node.jx)
 
-##### Debug
+##### Debug (still v0.1.2, v0.1.4 debug hasn't been released yet)
 - [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.2/debug/io.jxcore.node.jx)
 
