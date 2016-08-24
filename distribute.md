@@ -4,6 +4,7 @@
 - [ ] JxCore - Android
 - [ ] JxCore - macOS (desktop)
 - [ ] JxCore - Windows (desktop)
+- [ ] JxCore - Linux (desktop)
 - [ ] JxCore-Cordova plugin (this ingests the iOS & Android builds from above)
 
 # High Level Information
@@ -47,6 +48,7 @@ Within the path the folder structure is:
 - [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
 - [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64v8.zip) (macOS X desktop V8)
 - [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_win64v8.zip) (Windows desktop V8)
+- [ ] [jx_linux64v8.zip](https://jxcore.blob.core.windows.net/jxcore-release/jxcore/0314/release/jx_linux64v8.zip) (Linux desktop V8)
 
 ### JxCore Debug v3.1.2 (Debug v3.1.4 hasn't been released yet):
 - [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip) (iOS)
