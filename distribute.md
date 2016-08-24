@@ -1,10 +1,10 @@
 # This covers the package distribution of 
 
-- [ ] JxCore - iOS
-- [ ] JxCore - Android
-- [ ] JxCore - macOS (desktop)
-- [ ] JxCore - Windows (desktop)
-- [ ] JxCore - Linux (desktop)
+- [ ] JxCore iOS
+- [ ] JxCore Android
+- [ ] JxCore macOS (desktop)
+- [ ] JxCore Windows (desktop)
+- [ ] JxCore Linux (desktop)
 - [ ] JxCore-Cordova plugin (this ingests the iOS & Android builds from above)
 
 # High Level Information
