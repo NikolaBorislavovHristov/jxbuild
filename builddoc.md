@@ -2,13 +2,21 @@
 
 This covers the build and package of the following:
 
-* JxCore - desktop
-* JxCore - iOS
-* JxCore - Android
-* jxcore-cordova plugin
+* JxCore desktop
+* JxCore iOS
+* JxCore Android
+* JxCore-Cordova plugin
     * this ingests the iOS & Android builds from above...
 
-# Overall Steps
+# Automated scripts
+
+In the build_scripts directory, the macos-build-dist.sh script automates the process of building the JxCore and JxCore-Cordova
+distribution files. It runs on macOS and builds all the required files but:
+ - JxCore for Windows
+ - JxCore for Linux
+ - NPM parts
+
+# Manual Steps
 
 ## JxCore - Desktop build
 
