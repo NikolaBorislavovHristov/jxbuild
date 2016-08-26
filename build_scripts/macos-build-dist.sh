@@ -120,7 +120,12 @@ else
 fi
 # -----------------------------------------------------------------------------
 # 4-Checkout branch and update build scripts
-# TODO: get checkout release branch
+# The compile scripts for Android and iOS that are present in the jxcore repo
+# have the "-j 2" make flag hard-coded, it makes sense for the travis build
+# since in travis the build machines have only 2 cores available. In order to
+# avoid to make changes in two repos it was safer and quicker to just copy
+# those files over here and change them to optimize the compilation for desktop
+# CPUs (i.e. "-j 8").
 if [ $EXEC_FROM -gt "4" ]
 then
     LOG $NORMAL_COLOR "Skipping step 4."

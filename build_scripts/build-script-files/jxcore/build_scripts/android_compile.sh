@@ -2,6 +2,13 @@
 
 # Copyright & License details are available under JXCORE_LICENSE file
 
+# The compile scripts for Android and iOS that are present in the jxcore repo
+# have the "-j 2" make flag hard-coded, it makes sense for the travis build
+# since in travis the build machines have only 2 cores available. In order to
+# avoid to make changes in two repos it was safer and quicker to just copy
+# those files over here and change them to optimize the compilation for desktop
+# CPUs (i.e. "-j 8").
+
 NORMAL_COLOR='\033[0m'
 RED_COLOR='\033[0;31m'
 GREEN_COLOR='\033[0;32m'
