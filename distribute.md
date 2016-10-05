@@ -42,17 +42,28 @@ Within the path the folder structure is:
     ---- npmjx314.jx
 ```
 
+### JxCore Release v3.1.5:
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
+- [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_androidFATsm.zip) (Android SpiderMonkey)
+- [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
+- [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_osx64v8.zip) (macOS X desktop V8)
+- [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_win64v8.zip) (Windows desktop V8)
+- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore/0315/release/jx_linux64v8.zip) (Linux desktop V8)
+
 ### JxCore Release v3.1.4:
 - [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
 - [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_androidFATsm.zip) (Android SpiderMonkey)
 - [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
 - [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64v8.zip) (macOS X desktop V8)
 - [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_win64v8.zip) (Windows desktop V8)
-- [ ] [jx_linux64v8.zip](https://jxcore.blob.core.windows.net/jxcore-release/jxcore/0314/release/jx_linux64v8.zip) (Linux desktop V8)
+- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore-release/jxcore/0314/release/jx_linux64v8.zip) (Linux desktop V8)
 
 ### JxCore Debug v3.1.2 (Debug v3.1.4 hasn't been released yet):
 - [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_iosFATsm.zip) (iOS)
 - [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0312/debug/jx_androidFATsm.zip) (Android)
+
+### JxCore-Cordova Release v0.1.5:
+- [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.5/release/io.jxcore.node.jx)
 
 ### JxCore-Cordova Release v0.1.4:
 - [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.4/release/io.jxcore.node.jx)
