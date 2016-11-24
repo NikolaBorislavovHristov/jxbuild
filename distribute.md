@@ -32,11 +32,11 @@ Within the path the folder structure is:
 
 ```
 --- jxcore
-   \____ 0314/release
-    ---- 0314/debug
+   \____ 0317/release
+    
 --- jxcore-cordova
-   \____ 0.1.4/release
-    ---- 0.1.4/debug
+   \____ 0.1.7/release
+    
 --- npmjx
    \____ npmjx314.tar.gz
     ---- npmjx314.jx
@@ -44,31 +44,44 @@ Within the path the folder structure is:
 
 ## JxCore
 
+### v3.1.7:
+- [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0317/release/jx_androidFATsm.zip) (Android SpiderMonkey)
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0317/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
+- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore/0317/release/jx_linux64v8.zip) (Linux desktop V8)
+- [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0317/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
+- [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0317/release/jx_osx64v8.zip) (macOS X desktop V8)
+- [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0317/release/jx_win64v8.zip) (Windows desktop V8)
+
 ### v3.1.6:
-- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0316/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
 - [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0316/release/jx_androidFATsm.zip) (Android SpiderMonkey)
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0316/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
+- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore/0316/release/jx_linux64v8.zip) (Linux desktop V8)
 - [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0316/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
 - [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0316/release/jx_osx64v8.zip) (macOS X desktop V8)
 - [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0316/release/jx_win64v8.zip) (Windows desktop V8)
-- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore/0316/release/jx_linux64v8.zip) (Linux desktop V8)
 
 ### v3.1.5:
-- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
 - [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_androidFATsm.zip) (Android SpiderMonkey)
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
+- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore/0315/release/jx_linux64v8.zip) (Linux desktop V8)
 - [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
 - [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_osx64v8.zip) (macOS X desktop V8)
 - [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0315/release/jx_win64v8.zip) (Windows desktop V8)
-- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore/0315/release/jx_linux64v8.zip) (Linux desktop V8)
+
 
 ### v3.1.4:
-- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
 - [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_androidFATsm.zip) (Android SpiderMonkey)
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
+- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore-release/jxcore/0314/release/jx_linux64v8.zip) (Linux desktop V8)
 - [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64sm.zip) (macOS X desktop SpiderMonkey)
 - [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_osx64v8.zip) (macOS X desktop V8)
 - [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/0314/release/jx_win64v8.zip) (Windows desktop V8)
-- [ ] [jx_linux64v8.zip](https://jxcore.azureedge.net/jxcore-release/jxcore/0314/release/jx_linux64v8.zip) (Linux desktop V8)
+
 
 ## JXcore-Cordova
+
+### v0.1.6:
+- [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.7/release/io.jxcore.node.jx)
 
 ### v0.1.6:
 - [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.6/release/io.jxcore.node.jx)
