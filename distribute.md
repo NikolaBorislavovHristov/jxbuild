@@ -80,7 +80,7 @@ Within the path the folder structure is:
 
 ## JXcore-Cordova
 
-### v0.1.6:
+### v0.1.7:
 - [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.7/release/io.jxcore.node.jx)
 
 ### v0.1.6:
