@@ -1,11 +1,11 @@
 # This covers the package distribution of 
 
-- [ ] JxCore iOS
-- [ ] JxCore Android
-- [ ] JxCore macOS (desktop)
-- [ ] JxCore Windows (desktop)
-- [ ] JxCore Linux (desktop)
-- [ ] JxCore-Cordova plugin (this ingests the iOS & Android builds from above)
+- [ ] JXcore iOS
+- [ ] JXcore Android
+- [ ] JXcore macOS (desktop)
+- [ ] JXcore Windows (desktop)
+- [ ] JXcore Linux (desktop)
+- [ ] JXcore-Cordova plugin (this ingests the iOS & Android builds from above)
 
 # High Level Information
 
@@ -42,7 +42,7 @@ Within the path the folder structure is:
     ---- npmjx314.jx
 ```
 
-## JxCore
+## JXcore
 
 ### v3.1.8:
 - [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/0318/release/jx_androidFATsm.zip) (Android SpiderMonkey)
