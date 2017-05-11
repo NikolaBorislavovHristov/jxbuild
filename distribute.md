@@ -44,6 +44,16 @@ Within the path the folder structure is:
 
 ## JXcore
 
+### v3.1.12:
+- [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/03112/release/jx_androidFATsm.zip) (Android SpiderMonkey)
+- [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/03112/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
+- [ ] [jx_linux64v8.zip](http://jxcore.azureedge.net/jxcore/03112/release/jx_linux64v8.zip) (Linux V8)
+- [ ] [jx_osx64sm.zip](http://jxcore.azureedge.net/jxcore/03112/release/jx_osx64sm.zip) (macOS SpiderMonkey)
+- [ ] [jx_osx64v8.zip](http://jxcore.azureedge.net/jxcore/03112/release/jx_osx64v8.zip) (macOS V8)
+- [ ] [jx_win64v8.zip](http://jxcore.azureedge.net/jxcore/03112/release/jx_win64v8.zip) (Windows V8)
+
+### v3.1.11 was skipped to resync with the jxcore-cordova version number
+ 
 ### v3.1.10:
 - [ ] [jx_androidFATsm.zip](http://jxcore.azureedge.net/jxcore/03110/release/jx_androidFATsm.zip) (Android SpiderMonkey)
 - [ ] [jx_iosFATsm.zip](http://jxcore.azureedge.net/jxcore/03110/release/jx_iosFATsm.zip)  (iOS SpiderMonkey)
@@ -103,6 +113,12 @@ Within the path the folder structure is:
 
 
 ## JXcore-Cordova
+
+### v0.1.12:
+- [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.12/release/io.jxcore.node.jx)
+
+### v0.1.11:
+- [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.11/release/io.jxcore.node.jx)
 
 ### v0.1.10:
 - [ ] [io.jxcore.node.jx](http://jxcore.azureedge.net/jxcore-cordova/0.1.10/release/io.jxcore.node.jx)
